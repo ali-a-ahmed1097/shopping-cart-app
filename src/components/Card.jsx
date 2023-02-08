@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Card(props) {
     function handleClick(event) {
-        console.log(event.target);
+        if (event.target.className)
+            event.preventDefault();
     }
     return (
         <div className="card" onClick={handleClick}>
@@ -10,7 +11,7 @@ export default function Card(props) {
             <div className="bottom-card">
                 <div>${props.horse.price}.00</div>
                 <div>{props.horse.name}</div>
-                <button>Add to cart</button>
+                <button className="add">Add to cart</button>
             </div>
         </div>
     );

@@ -92,3 +92,8 @@ button:hover {
     padding: 0;
     height: 40px;
 }
+
+a {
+    all: unset;
+    cursor: pointer;
+}
