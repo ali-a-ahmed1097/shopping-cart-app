@@ -74,3 +74,21 @@ button:hover {
     min-width: 100%;
     min-height: 100%;
 }
+
+.shopping-cart {
+    height: 40px;
+    cursor: pointer;
+}
+
+.items {
+    position: relative;
+    bottom: 36px;
+    text-align: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.shopping-cart-whole {
+    padding: 0;
+    height: 40px;
+}

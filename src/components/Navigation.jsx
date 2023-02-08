@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/logo.jpg';
+import spc from '../assets/shopping-cart.png';
 
 export default function Navigation() {
     return (
@@ -14,6 +15,10 @@ export default function Navigation() {
             <Link to='/shop'>
                 <div>SHOP</div>
             </Link>
+            <div className="shopping-cart-whole">
+                <img src={spc} className='shopping-cart' />
+                <div className="items">0</div>
+            </div>
         </div>
     );
 }
