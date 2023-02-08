@@ -1,12 +1,76 @@
-body, h1 {
+:root {
+    --size: 410px;
+}
+
+body {
+    background-color: rgb(249, 249, 249);
+}
+
+body,
+h1 {
     margin: 0;
     padding: 0;
 }
 
+button {
+    width: 375px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 0;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: larger;
+}
+
+button:hover {
+    background-color: rgb(36, 34, 34);
+}
+
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: aqua;
     padding: 10px;
+    position: sticky;
+    top: 0px;
+    gap: 35px;
+    background-color: white;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: var(--size);
+    cursor: pointer;
+    border: 1px solid lightgray;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, var(--size));
+    justify-content: center;
+    margin-top: 75px;
+    gap: 60px;
+    margin-bottom: 75px;
+}
+
+.logo-image {
+    width: 150px;
+}
+
+.title {
+    margin-right: auto;
+}
+
+.bottom-card {
+    padding: 15px;
+}
+
+#myVideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
 }
