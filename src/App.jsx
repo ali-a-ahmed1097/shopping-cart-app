@@ -5,6 +5,7 @@ import { horseData } from './assets/horse-data';
 import Home from './components/Home';
 import Navigation from './components/Navigation';
 import Shop from './components/Shop';
+import Cart from './components/Cart';
 
 
 export default function App() {
@@ -28,6 +29,7 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/shop' element={<Shop horses={horseData} addToCart={increaseCart} />} />
+                <Route path='/cart' element={<Cart items={cart}/>} />
                 {horseRoutes}
             </Routes>
         </BrowserRouter>

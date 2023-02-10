@@ -15,10 +15,12 @@ export default function Navigation(props) {
             <Link to='/shop'>
                 <div>SHOP</div>
             </Link>
-            <div className="shopping-cart-whole">
-                <img src={spc} className='shopping-cart' />
-                <div className="items">{props.count}</div>
-            </div>
+            <Link to="/cart">
+                <div className="shopping-cart-whole">
+                    <img src={spc} className='shopping-cart' />
+                    <div className="items">{props.count}</div>
+                </div>
+            </Link>
         </div>
     );
 }
