@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Card(props) {
     function handleClick(event) {
-        if (event.target.className)
+        if (event.target.className) {
             event.preventDefault();
+            props.addToCart(props.horse.name);
+        }
     }
     return (
         <div className="card" onClick={handleClick}>

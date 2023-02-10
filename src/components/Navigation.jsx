@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from '../assets/logo.jpg';
 import spc from '../assets/shopping-cart.png';
 
-export default function Navigation() {
+export default function Navigation(props) {
     return (
         <div className="navbar">
             <Link to='/'>
@@ -17,7 +17,7 @@ export default function Navigation() {
             </Link>
             <div className="shopping-cart-whole">
                 <img src={spc} className='shopping-cart' />
-                <div className="items">0</div>
+                <div className="items">{props.count}</div>
             </div>
         </div>
     );

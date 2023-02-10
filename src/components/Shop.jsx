@@ -7,7 +7,7 @@ export default function Shop(props) {
 
     const horseCards = props.horses.map(horse => (
         <Link key={nanoid()} to={`/shop${horse.link}`}>
-            <Card horse={horse} />
+            <Card horse={horse} addToCart={props.addToCart} />
         </Link>
     ));
 
