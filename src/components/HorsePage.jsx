@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function HorsePage(props) {
     const [quantity, setQuantity] = React.useState(1);
@@ -18,8 +19,11 @@ export default function HorsePage(props) {
                     <div className="to-add">{quantity}</div>
                     <div className="plus" onClick={() => changeQuantity(1)}>+</div>
                 </div>
+                <button className="add" onClick={() => props.addToCart(props.horse.name, quantity)}>Add to cart</button>
+                <Link to="/shop">
+                    <div>{'<'} Back</div>
+                </Link>
             </div>
-            <button className="add" onClick={() => props.addToCart(props.horse.name, quantity)}>Add to cart</button>
         </div>
     );
 }

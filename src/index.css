@@ -105,6 +105,13 @@ a {
     gap: 65px;
 }
 
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 145px;
+}
+
 .quantity {
     display: flex;
     align-items: center;
@@ -138,4 +145,15 @@ a {
 
 .plus:active {
     background-color: chartreuse;
+}
+
+.right-side > .add {
+    margin-bottom: auto;
+}
+
+.add:active {
+    background-color: #118C4F;
+    color: black;
+    border: 2px solid black;
+    box-sizing: border-box;
 }
