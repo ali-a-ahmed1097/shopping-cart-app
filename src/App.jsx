@@ -6,12 +6,12 @@ import Home from './components/Home';
 import Navigation from './components/Navigation';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
+import HorsePage from './components/HorsePage';
 
 
 export default function App() {
     const [cart, setCart] = React.useState(horseData.map(horse => ({ ...horse, quantity: 0 })));
     const [cartCount, setCartCount] = React.useState(0);
-    const horseRoutes = horseData.map(horse => <Route key={nanoid()} path={`/shop${horse.link}`} element={<Shop horses={horseData} />} />);
 
     function increaseCart(name, i = 1) {
         setCartCount(prev => prev + i);
@@ -22,6 +22,8 @@ export default function App() {
                 : horse; // false
         }));
     }
+
+    const horseRoutes = horseData.map(horse => <Route key={nanoid()} path={`/shop${horse.link}`} element={<HorsePage horse={horse} addToCart={increaseCart} />} />);
 
     return (
         <BrowserRouter>

@@ -12,7 +12,7 @@ h1 {
     padding: 0;
 }
 
-button {
+.add {
     width: 375px;
     height: 50px;
     background-color: black;
@@ -96,4 +96,46 @@ button:hover {
 a {
     all: unset;
     cursor: pointer;
+}
+
+.full-horse {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 100px;
+    gap: 65px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.minus, .plus {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 21px;
+    text-align: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.to-add {
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.minus:active {
+    background-color: red;
+}
+
+.plus:active {
+    background-color: chartreuse;
 }
