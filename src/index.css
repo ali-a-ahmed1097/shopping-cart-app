@@ -157,3 +157,40 @@ a {
     border: 2px solid black;
     box-sizing: border-box;
 }
+
+.cart-item {
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    margin-left: 45px;
+    gap: 15px;
+}
+
+.upper-cart-item {
+    width: 650px;
+}
+
+.view-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.remove {
+    cursor: pointer;
+    color: red;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total {
+    font-weight: 400;
+    font-size: xx-large;
+    letter-spacing: 3px;
+}

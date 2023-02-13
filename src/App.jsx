@@ -31,7 +31,7 @@ export default function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/shop' element={<Shop horses={horseData} addToCart={increaseCart} />} />
-                <Route path='/cart' element={<Cart items={cart}/>} />
+                <Route path='/cart' element={<Cart items={cart} func={increaseCart} />} />
                 {horseRoutes}
             </Routes>
         </BrowserRouter>
