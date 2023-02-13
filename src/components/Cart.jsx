@@ -16,6 +16,7 @@ export default function Cart(props) {
                 <div>Your cart is empty!</div>
             }
             <div className="total">Total: ${total}.00</div>
+            <button className="add" onClick={() => window.location.reload()} >Checkout</button>
         </div>
     )
 }
